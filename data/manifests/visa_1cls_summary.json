@@ -1,0 +1,22 @@
+{
+  "pcb1": {
+    "test:anomaly": 100,
+    "test:normal": 100,
+    "train:normal": 904
+  },
+  "pcb2": {
+    "test:anomaly": 100,
+    "test:normal": 100,
+    "train:normal": 901
+  },
+  "pcb3": {
+    "test:anomaly": 100,
+    "test:normal": 101,
+    "train:normal": 905
+  },
+  "pcb4": {
+    "test:anomaly": 100,
+    "test:normal": 101,
+    "train:normal": 904
+  }
+}

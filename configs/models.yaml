@@ -1,0 +1,23 @@
+models:
+  patchcore-pcb1-v0:
+    kind: anomaly
+    framework: anomalib
+    algorithm: patchcore
+    product: pcb1
+    status: ready
+    artifact: artifacts/models/patchcore-pcb1-v0.ckpt
+    checkpoint_sha256: acd642a8cb5485916d9be5815eb2f9c7017fa43bfbe2e2e5aa3fddef2b1b3992
+    evaluation: artifacts/results/patchcore-pcb1-v0-calibrated.json
+    evaluation_metrics:
+      heldout_image_auroc: 0.8584
+      heldout_pixel_auroc: 0.9776426555
+      heldout_pixel_average_precision: 0.8163585075
+      heldout_defect_recall: 0.92
+      heldout_false_positive_rate: 0.64
+    limitations: "High held-out false-positive rate; proof-of-concept use only."
+  detector-binary-v0:
+    kind: detection
+    framework: yolov6
+    task: binary_anomaly_localization
+    status: not_trained
+    artifact: artifacts/models/detector-binary-v0.pt

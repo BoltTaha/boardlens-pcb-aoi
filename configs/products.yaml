@@ -1,0 +1,25 @@
+version: "2026-10-09.2"
+products:
+  pcb1:
+    display_name: "VisA PCB1"
+    anomaly_model: "patchcore-pcb1-v0"
+    thresholds:
+      review: 13.575113296508789
+      fail: 13.726470947265625
+      minimum_region_pixels: 64
+    calibration_status: calibrated_on_even_half_of_official_test
+  pcb2:
+    display_name: "VisA PCB2"
+    anomaly_model: "patchcore-pcb2-v0"
+    thresholds: {review: 0.45, fail: 0.70, minimum_region_pixels: 64}
+    calibration_status: uncalibrated
+  pcb3:
+    display_name: "VisA PCB3"
+    anomaly_model: "patchcore-pcb3-v0"
+    thresholds: {review: 0.45, fail: 0.70, minimum_region_pixels: 64}
+    calibration_status: uncalibrated
+  pcb4:
+    display_name: "VisA PCB4"
+    anomaly_model: "patchcore-pcb4-v0"
+    thresholds: {review: 0.45, fail: 0.70, minimum_region_pixels: 64}
+    calibration_status: uncalibrated
